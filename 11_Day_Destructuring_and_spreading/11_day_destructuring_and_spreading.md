@@ -286,9 +286,9 @@ const person = {
 
 const getPersonInfo = obj => {
   const skills = obj.skills
-  const formattedSkills = skills.slice(0, -1).join(', ')
+  const formattedSkills = skills.join(', ')
   const languages = obj.languages
-  const formattedLanguages = languages.slice(0, -1).join(', ')
+  const formattedLanguages = languages.join(', ')
 
   personInfo = `${obj.firstName} ${obj.lastName} lives in ${obj.country}. He is  ${
     obj.age
